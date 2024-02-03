@@ -50,5 +50,15 @@
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 0 0 3px #efef00 inset;
+    background: #04a1d5; /* Adjust the color to fit the overall design */
+    color: #fff; /* Adjust the text color to match the overall design */
+    box-shadow: 0 0 0 3px #04a1d5 inset; /* Adjust the shadow color to match the background color */
+}
+
+.play-again-button:hover {
+    transform: translateY(-2px);
+}
+
+.play-again-button:active {
+    background-color: #254878; /* Darker color on click */
 }

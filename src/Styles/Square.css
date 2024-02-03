@@ -8,6 +8,8 @@
     margin-top: -2px;
     padding: 0;
     color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .image-icon {
@@ -38,4 +40,8 @@
     50%	{ background-color: #ef0a1a;}
     75%	{ background-color: #254878;}
     100% { background-color: #04a1d5;}
+}
+
+.square:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
 }

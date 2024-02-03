@@ -8,9 +8,31 @@ body {
   background-color: #222;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f; /* Dark background color for dark mode */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Custom Background Shape */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw; /* Adjust as needed for the desired width */
+  height: 200vw; /* Adjust as needed for the desired height */
+  background: radial-gradient(circle at center, #ff0000, #0000ff); /* Custom gradient colors */
+  border-radius: 20%; /* Adjust to control the roundness of the corners */
+  opacity: 0.3; /* Adjust the opacity for a subtle effect */
+  transform: rotate(-45deg); /* Rotate the square for a dynamic appearance */
+  z-index: -1;
+  animation: floatShape 15s linear infinite alternate;
+}
+
+@keyframes floatShape {
+  0% { transform: rotate(-45deg) translate(0, 0); }
+  100% { transform: rotate(-45deg) translate(10%, 10%); }
 }

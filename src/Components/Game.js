@@ -31,7 +31,7 @@ function Game() {
             <h1 className='game-status'>
                 { winner ?
                     <>
-                        <img src={`image_${winner.value}.png`} alt={winner.value} className="image-icon">
+                        <img src={process.env.PUBLIC_URL + `/image_${winner.value}.png`} alt={winner.value} className="image-icon">
                         </img><span>Won</span>
                     </>:
                     gameOver ? "Game Over!" : `Next Player: ${ xIsNext ? 'X' : 'O' }`
